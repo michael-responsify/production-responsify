@@ -4,3 +4,5 @@ config:
   framework: wordpress
   site: production-responsify
   id: e7457265-af18-4427-9159-aa59bf06c222
+
+  php_version: 7.1
