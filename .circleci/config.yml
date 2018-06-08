@@ -58,6 +58,10 @@ jobs:
                 name: install dev dependencies
                 command: composer install --no-ansi --no-interaction --optimize-autoloader --no-progress
 
+            - run:
+                name: install sage dependencies
+                command: composer install -d=./web/wp-content/themes/responsify-style
+
             - save_cache:
                 key: composer-cache
                 paths:
